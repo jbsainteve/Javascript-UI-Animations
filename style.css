@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+}
+canvas {
+  background: black;
+  /* filter: blur(20px) contrast(8); */
+  filter: blur(2px) contrast(4);
+}
+
+.buttons1 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width:100vw;
+  text-align: center;
+}
+.buttons2 {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width:100vw;
+  text-align: center;
+}
+.button {
+  position: relative;
+  width: 25%;
+  height: 120px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0px 0px 0px orange, 0px 0px 0px orange,  0px 0px 0px orange, 0px 0px 0px orange;
+  border-radius: 50px;
+  transition: 0.5s;
+  background: transparent;
+border: none;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background: black;
+    transition: 0.8s;
+  line-height: 110px;
+  font-size: 50px;
+  font-weight: 900;
+    color: white;
+   border-radius: 50px;
+  border: 5px solid white;
+text-shadow: 0 0 0 #ef0000, 0 0 0 #ef0000,  0 0 0 #ef0000, 0 0 0 #ef0000;
+transition: text-shadow 1s ease-out, background 0.5s ease 0.1s;
+}
+.button:hover:before {
+  text-shadow: 5px 5px 20px #ef0000, -5px -5px 20px #ef0000,  -5px 5px 20px #ef0000, 5px -5px 20px #ef0000;
+  background: yellow;
+  color: #ffff00;
+  border-radius: 50px;
+  box-shadow: inset 10px 10px 15px #ef0000, inset -10px -10px 15px #ef0000, inset  -10px 10px 15px #ef0000, inset  10px -10px 15px #ef0000;
+border: 5px solid #ef0000;
+
+}
+.button:hover {
+  background: #ef0000;
+  box-shadow: 10px 10px 5px #ef0000, -10px -10px 5px #ef0000,  -10px 10px 5px #ef0000, 10px -10px 5px #ef0000;
+
+}
+/* .button:nth-child(1)::before {
+  content: 'HOME';
+}
+.button:nth-child(2)::before {
+  content: 'SHOP';
+}
+.button:nth-child(3)::before {
+  content: 'ART';
+}
+.button:nth-child(4)::before {
+  content: 'AAA';
+}
+.button:nth-child(5)::before {
+  content: 'BBB';
+}
+.button:nth-child(6)::before {
+  content: 'CCC';
+} */
+.button1::before {
+  content: 'HOME';
+}
+.button2::before {
+  content: 'SHOP';
+}
+.button3::before {
+  content: 'ART';
+}
+.button4::before {
+  content: 'ART';
+}
+.button5::before {
+  content: 'HOME';
+}
+.button6::before {
+  content: 'SHOP';
+}
+
